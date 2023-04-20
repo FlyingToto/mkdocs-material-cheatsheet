@@ -1,4 +1,7 @@
 site_name: Mk Doc youtube tutorial
+
+plugins:
+  - tooltips
 theme:
   name: material
   features:
@@ -29,7 +32,11 @@ theme:
 markdown_extensions:
   - abbr
   - attr_list
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/glossary.md
+  - fontawesome_markdown
+  - pymdownx.emoji
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.arithmatex:
@@ -41,9 +48,18 @@ markdown_extensions:
   - footnotes
   - admonition
   - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.progressbar
 
 extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/FlyingToto/
-  
+
+extra_css:
+  - css/hint.min.css
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/FlyingToto"  target="_blank" rel="noopener">Flying Toto</a>
