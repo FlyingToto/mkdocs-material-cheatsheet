@@ -41,4 +41,9 @@ markdown_extensions:
   - footnotes
   - admonition
   - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/FlyingToto/
   
