@@ -18,5 +18,5 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install mkdocs-material
+      - run: ppip install mkdocs-material mkdocs-snippets  mkdocs-tooltips https://github.com/bmcorser/fontawesome-markdown/archive/master.zip
       - run: mkdocs gh-deploy --force
